@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from urllib.parse import urlparse, parse_qs
 import ujson
 import time
