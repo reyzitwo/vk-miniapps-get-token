@@ -19,8 +19,8 @@ chrome_options.add_argument('--no-sandbox')
 driver = webdriver.Chrome(webdriver_path, options=chrome_options)  # Подключаем движок Chrome
 driver.get(url)  # Получаем страницу oauth.vk.com
 
-username = '//*[@id="login_submit"]/div/div/input[7]'  # xpath поля ввода логина
-password = '//*[@id="login_submit"]/div/div/input[8]'  # xpath поля ввода пароля
+username = '//*[@id="login_submit"]/div/div/input[6]'  # xpath поля ввода логина
+password = '//*[@id="login_submit"]/div/div/input[7]'  # xpath поля ввода пароля
 login = '//*[@id="install_allow"]'  # кнопка авторизации
 button = '//*[@class="flat_button fl_r button_indent"]'  # кнопка получения токена
 
@@ -36,3 +36,4 @@ response = {
 }
 
 print(ujson.encode(response))  # выводим результат
+driver.quit()
