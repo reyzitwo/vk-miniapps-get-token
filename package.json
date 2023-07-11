@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "path": "^0.12.7",
+    "selenium-webdriver": "^4.10.0"
+  }
+}
